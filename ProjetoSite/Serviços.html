@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Serviços</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<meta charset="utf-8">
+
+	<style type="text/css">
+		html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color:#ffa500;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.section .container {
+  padding: 20px 0 50px 0;
+}
+
+.section.bg {
+  background: white;
+}
+/*
+  Header
+*/
+
+.hold {
+  height: 80px;
+}
+
+.header {
+  line-height: 80px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #ffa500;
+}
+
+.header.small {
+  line-height: 50px;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+}
+
+.header.small > .container > #logo {
+  height: 40px;
+}
+
+#logo {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-100%);
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+}
+
+ul.nav li:hover a {
+  color: white;
+  
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+}
+/*
+  Slider
+*/
+ .slider,
+ .footer {
+  background:#696969 ;
+  height: 475px;
+  margin-bottom: 0%;
+ }
+
+.slidercontent {
+  text-align: center;
+  background-image: url("images/gif_servicos.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 15em;
+  padding-right: 6.5em;
+  padding-left: 6.5em;
+}
+
+.hero {
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h1.hero {
+  font-size: 50px;
+}
+
+h2.hero {
+  font-size: 25px;
+  text-align: center;
+}
+
+h1.hero:after {
+  content: "";
+  width: 300px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.call {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.call span {
+  display: inline;
+  border: 1px solid white;
+  padding: 8px 13px;
+  font-size: 20px;
+  transition: background 0.15s linear;
+}
+
+.call span:hover {
+  background: #ffa500;
+  cursor: pointer;
+}
+.menu ul li:hover{
+    color:#ffa500;
+}
+.menu .feature:hover{
+    color: #ff953e;
+}
+.feature2:hover{
+  color:#ff953e;
+}
+.dif:hover{
+  color:#ff953e;
+}
+/* 
+  Columns 
+*/
+
+.col {
+  float: left;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  alignment-baseline: central;
+  text-align: center;
+  vertical-align: center;
+  text-align-last: center;
+  background: center;
+  align-content: center;
+}
+
+.col.four {
+  width: 23%;
+  margin: 0 5%;
+}
+
+.col.three {
+  width: 31%;
+  margin: 0 1%;
+}
+
+.col.two {
+  width: 40%;
+  margin: 0 2.5%;
+  padding: 0 2.5%;
+}
+
+.col.extrapad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.col .service,
+.col {
+  font-size: 25px;
+  font-family: 'Roboto Slab', sans-serif;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+.feature{
+	color: white;
+	font-size: 30px;
+  font-family: 'Roboto Slab', sans-serif;
+  cursor: pointer;
+    
+}
+
+.col .service:after {
+  content: "";
+  width: 10px;
+  position: relative;
+  border-bottom: 1px solid ;
+  display: block;
+  text-align: justify;
+  margin: auto;
+  margin-top: 1px;
+}
+
+.col .feature {
+  font-size: 30px;
+}
+
+.col h1.side,
+.col p.side,
+.col span.side:first-of-type {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Roboto Slab', sans-serif;
+  
+}
+
+.col .icon {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.25s linear, color 0.25s linear;
+}
+
+.col .icon.side {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 5px;
+  height: 73px;
+  width: 73px;
+}
+
+
+.col:hover > .icon.side {
+  background: initial;
+  color: initial;
+}
+
+.responsivegroup {
+  display: none;
+}
+/*
+  Column specifics
+*/
+
+.col p,
+.col h1 {
+  padding: 0 1%;
+  text-align: center;
+}
+
+.group.margin {
+  margin-bottom: 20px;
+}
+
+.col .imgholder {
+  height: 300px;
+  width: 100%;
+  background: #333;
+  transition: background 0.3s linear;
+  border-radius: 10px;
+}
+
+.col.bg {
+  background:#ff953e;
+}
+
+.col.pointer .feature .feature2{
+  cursor: pointer;
+}
+
+.col.bg:hover {
+  background: #696969 ;
+}
+
+.col span.feature {
+  font-size: 20px;
+}
+/*
+  Text
+*/
+
+.container > h1:not(.hero) {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container > h1:after {
+  content: "";
+  width: 30px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.left,
+.left > h1,
+.left > p {
+  text-align: left;
+}
+
+.reset {
+  text-align: left !important;
+}
+
+.reset:after {
+  display: none !important;
+}
+/* 
+  Slider with Content
+*/
+
+.white h1,
+.white h2,
+.white p,
+.white div,
+.white a {
+  color: white;
+}
+/*
+  Responsive
+*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .col.four {
+    width: 48%;
+    margin: 1%;
+  }
+  .col.three {
+    display: inline-block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .header {
+    height: auto;
+    background: #eee;
+  }
+  #logo {
+    position: initial;
+    float: none;
+    display: block;
+    transform: none;
+    margin: 10px auto 0 auto;
+  }
+  ul.nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul.nav li {
+    float: initial;
+    display: inline-block;
+  }
+  .responsivegroup {
+    display: block;
+  }
+  .responsivegroup:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+li{
+	color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .col, .col.four, .col.three, .col.two {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .col.extrapad {
+    padding: 1%;
+    margin-bottom: 10px;
+  }
+  .group {
+    display: none;
+  }
+}
+.clock{
+	height: 100px;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+.map{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.phone{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.dif{
+	color:white;
+	font-size: 30px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+  cursor: pointer;
+  margin-top: 5px;
+
+}
+.down_logo{
+	height: 97px;
+	margin-top: 8px;
+	margin-left: 7px;
+    align-self: center;
+    
+}
+.face{
+	height: 50px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+#titulo{
+    font-family: sans-serif;
+    color:black;
+    text-align: center;
+}
+#subtitulo{
+    font-family: sans-serif;
+    color:black;
+    text-align: center;
+}
+fieldset{
+    border: 0;
+}
+main{
+    background-color: #ffa500;
+    font-family: sans-serif;
+    font-size: 1em;
+    color:black;
+    width:500px;
+    height: 520px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    float: right;
+
+}
+fieldset{
+    border: 0;
+}
+input, select, textarea, button{
+    border-radius: 5px;
+}
+.campo{
+    margin-bottom: 1em;
+}
+.campo label, .campo textarea{
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+fieldset.grupo .campo{
+    float:left;
+    margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="number"],.campo input[type="email"], .campo input[type="textarea"] {
+    padding: 0.2em;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px #cecece;
+    display: block;
+}
+.campo select option{
+    padding-right:1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background:#cecece;
+}
+.botao{
+    font-size: 1.2em;
+    background:black;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px #cecece;
+    text-shadow: 1px 1px 1px red;
+    position: absolute;
+    top: 147%;
+    left: 81%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.botao:hover {
+    background: #cecece;
+    box-shadow: inset 2px 2px 2px #cecece;
+    text-shadow: none;
+}
+.redes-socias ul li{
+    margin-left: 25px;
+    display: inline-block;
+    list-style: none;
+}
+.redes-socias{
+    float: right;
+    
+}
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+p{
+    font-size:15px;
+    text: justify;
+    color: white;
+}
+.hero2{
+    font-size: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #ff953e;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+nav { 
+  margin:0;
+  padding: 0;
+  background-color: #ffae00;
+}
+
+nav:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+
+nav ul {
+  float: right;
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+  }
+  
+
+nav ul li {
+  margin: 0px;
+  display:inline-block;
+  float: left;
+  background-color: #ffae00;
+  }
+
+
+nav a {
+  display:block;
+  padding:14px 20px;  
+  color: black;
+  font-size:17px;
+  text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: black; }
+
+/* Background color change on Hover */
+nav a:hover { 
+  background-color: #ffbc40; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 60px; 
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers 
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+  position: relative;
+  top:-60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */ 
+  left:170px; 
+}
+
+  
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+  nav {
+    margin: 0;
+  }
+
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: #ffae00;
+    padding:14px 20px;  
+    font-size:17px;
+    text-decoration:none;
+    border:none;
+  }
+
+  .toggle:hover {
+    background-color: #000000;
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+    }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #000000;
+  }
+  
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a{
+    padding:14px 20px;  
+    color:#FFF;
+    font-size:17px; 
+  }
+  
+  
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #ffae00; 
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position:static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+    
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+    
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */ 
+
+  }
+
+}
+
+@media all and (max-width : 330px) {
+
+  nav ul li {
+    display:block;
+    width: 94%;
+  }
+}
+.servico{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: justify;
+  margin: 5px 5px 5px 5px;
+}
+.servico2{
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: justify;
+  margin: 5px 5px 5px 5px;
+}
+ul{
+  color: #ffffff;
+}
+.feature2{
+	color:white;
+	font-size: 25px;
+    font-family: 'Roboto Slab', sans-serif;
+    cursor: pointer;
+    
+}
+.rodape{
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color:#ffa500;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+.texto{
+  font-size: 22px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #696969 ;
+    font-weight: normal;
+    text-align: justify;
+}
+p{
+  font-size: 20px;
+}
+.alis a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.lug{
+  float: right;
+  left: 100%;
+  text-align: center;
+  margin-top: -50%;
+}
+
+.lug h1{
+  text-align: center;
+}
+
+.lug p {
+  text-align: justify;
+}
+
+
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="hold">
+  <div class="header">
+    <div class="container">
+      <div id="logo">
+        <img class="down_logo" src="images/Logo.PNG">
+      </div>
+      <ul class="nav">
+        <li><a href="Index2.html">Home</a></li>
+        <li><a href="Agendamento.html">Agendamento</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="login.html">Área do profissional</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container slidercontent">
+    <h1 class="hero"><strong>Serviços</strong></h1>
+    
+    <h2 class="hero">Este são alguns de nossos serviços mais famosos para melhorar o seus cabelos e as makes para arrasar nas festas</h2>
+</div>
+
+<a href="https://api.whatsapp.com/send?phone=5511986364371" class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  </div>
+   <div class="section">
+  <div class="container">
+    <h1 class="hero2"><strong>CONFIRA NOSSOS SERVIÇOS</strong></h1>
+    <h3 class="texto">  Maria Celia disponibiliza um vasto leque de serviços pensados exclusivamente a vocês, com qualidade e profissionalismo que todos nós devemos exigir. Além da nossa obrigação, que é nos mantermos atualizados e na vanguarda da moda, Ana Maria Celia sabe que o mais importante é o gosto dos nossos clientes, sendo essa a nossa primeira preocupação. Com formação frequente de toda a nossa equipe em todos os setores ligados à beleza. Venha conferir!</h3>
+    <div class="menu">
+    <div class="col three bg ">
+      <div><img class="imgholder" src="images/corte.jfif"></div>
+      <h1 id="tituloCorte"class="feature"><strong>CORTE</strong></h1>
+      <div class="servico" id="textoCorte">O corte de cabelo retira as pontas ressecadas do cabelo e ajuda no crescimento dos fios. Com base no conhecimento do visagismo, estudo que avalia a imagem de uma pessoa, é possível determinar os melhores cortes de cabelo para cada tipo de rosto. O objetivo é promover um visual mais homogêneo e confiante.</div>
+      
+    
+    </div>
+    <div class="col three bg ">
+      <div><img class="imgholder" src="images/luzes.jpg"></div>
+      <h1 id="tituloLuzes"class="feature"><strong>LUZES</strong></h1>
+      <div class="servico" id="textoLuzes">Luzes é uma técnica para clarear e iluminar os cabelos. As luzes são mechas bem finas, que podem ser feitas por todo o cabelo ou apenas em pequenas partes. Os tons claros dão uma aparência queimada de sol e devem ser feitos em cabelos mais claros.</div>
+    </div>
+    <div class="col three bg ">
+      <div><img class="imgholder" src="images/pent.jfif"></div>
+      <h1 id="tituloPenteado" class="feature"><strong>PENTEADOS</strong></h1>
+      <div class="servico" id="textoPenteado">Penteado é o estilo ou arranjo dado aos cabelos através do uso de pentes e escovas, baby liss e outras técnicas.</div>
+    
+      <label>
+      <ul class="feature2">
+      	<input type="radio" name="devweb" value="festas"> Festas <br>
+      	<input type="radio" name="devweb" value="noivas"> Noivas <br>
+      	<input type="radio" name="devweb" value="madrinha"> Madrinha <br>
+      	<input type="radio" name="devweb" value="debutante"> Debutante <br>
+      	<input type="radio" name="devweb" value="formatura"> Formatura <br>
+      </ul>
+      </label>
+    </div>
+    <div class="group margin"></div>
+    <div class="col three bg ">
+      <div><img class="imgholder" src="images/maquiagem.png"></div>
+      <h1 id="tituloMaquiagem" class="feature"><strong>MAQUIAGEM</strong></h1>
+      <div class="servico" id="textoMaquiagem">A maquiagem faz parte do dia a dia de muitas mulheres. É utilizada para esconder certas imperfeições faciais, como manchas, espinhas e poros dilatados, entre outros. Contudo, além de camuflar esses tipos de problemas de pele, ajuda a realçar os traços, valorizando a beleza.</div>
+    
+      
+        <label>
+        <ul class="feature2">
+      	<input type="radio" name="devweb" value="festas"> Festas <br>
+      	<input type="radio" name="devweb" value="noivas"> Noivas <br>
+      	<input type="radio" name="devweb" value="madrinha"> Madrinha <br>
+      	<input type="radio" name="devweb" value="debutante"> Debutante <br>
+      	<input type="radio" name="devweb" value="formatura"> Formatura <br>
+        </ul>
+        </label>
+
+  
+    </div>
+    <div class="col three bg ">
+      <div><img class="imgholder" src="images/trat.jpg"></div>
+      <h1 id="tituloTratamento" class="feature"><strong>TRATAMENTO CAPILAR</strong></h1>
+      <div class="servico" id="textoTratamento">O tratamento capilar é responsável por reter ou repor a umidade dentro do fio, assim como devolver os nutrientes e as proteínas perdidos na fibra devido à ação de fatores mecânicos ou químicos. Para que esse processo alcance o resultado desejado, é preciso contar com os ingredientes certos.</div>
+      <ul class="feature2">
+      	<input type="radio" name="devweb" value="formatura" id="tituloHidratacao"> Hidratação <br>
+          
+          <div class="servico2" id="textoHidratacao">Utilizada para repor a umidade natural, nutrientes e queratina perdida. A hidratação constante é uma grande aliada para manter os cabelos saudáveis, com brilho, sedosos e macios.</div>
+        
+        
+      	<input type="radio" name="devweb" value="formatura" id="tituloDetox"> Detox Quelax <br>
+          
+          <div class="servico2" id="textoDetox">Limpa profundamente o couro cabeludo e estimular o crescimento dos fios.</div>
+         
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloReconstrucao"> Reconstrução <br>
+         
+          <div class="servico2" id="textoReconstrucao">Reconstrução dos cabelos, recuperando o seu brilho e força natural.</div>
+         
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloRe"> Reconstrução dos fios <br>
+          <div class="servico2" id="textoRe">É um processo que ajuda a repor a queratina do cabelo, que é a proteína responsável por manter a estrutura dos fios e que é eliminada todos os dias devido à exposição solar, aos alisamentos com chapinha ou ao uso de químicos no cabelo, deixando o cabelo mais poroso e quebradiço.</div>
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloNutricao"> Nutrição <br>
+          <div class="servico2" id="textoNutricao">A nutrição capilar consiste na reposição de lipídios (gorduras) que compõem o fio. Ela é indicada, principalmente, para pessoas que possuem algum tipo de química, tintura ou alisamento no cabelo.</div>
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloBlindagem"> Blindagem dos fios <br>
+          <div class="servico2" id="textoBlindagem">A blindagem capilar é uma técnica de reconstrução do cabelo que ajuda na proteção e recuperação do brilho e saúde dos fios. Ela é recomendada, principalmente, para quem faz muitos processos químicos e para as mulheres que possuem madeixas ressecadas.</div>
+        
+      </ul>
+    </div>
+    <div class="col three bg ">
+      <div><img class="imgholder" src="images/quimica.jpg"></div>
+      <h1 id="tituloQuimica" class="feature"><strong>QUÍMICA CAPILAR</strong></h1>
+      <div class="servico"  id="textoQuimica">Se refere a beleza das transformações químicas do cabelo. Todos os procedimentos capilares envolvem a Química, desde as mais simples que realizamos cotidianamente como lavar e condicionar até os mais complexos com alisar e colorir os cabelos.</div>
+      <ul class="feature2">
+      	<input type="radio" name="devweb" value="formatura" id="tituloColoracao"> Coloração <br>
+          <div class="servico2" id="textoColoracao">No salão de beleza, primeiro o cabelo é lavado e o produto então é aplicado. Na raiz, comprimento e pontas, quando necessário. Em geral, é usado a mistura da coloração clássica e o oxidante que será usado para fixar a cor, mas tudo depende do objetivo do cliente. Espera-se o tempo de pausa, lava-se os fios e então o cabeleireiro realiza o penteado da preferência.</div>
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloProgressiva" > Progressiva <br>
+          <div  class="servico2"id="textoProgressiva">É um método de alisar o cabelo. Esse método é fantástico, pois além de deixar o cabelo com uma aparência natural, hidrata os fios.</div>
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloRelaxamento"> Relaxamento <br>
+          <div class="servico2" id="textoRelaxamento">É um tratamento voltado para cabelos cacheados e crespos. Ele tem como função deixar os cachos mais definidos e soltos, diminuindo o volume e dando mais movimento aos fios. Portanto, é um procedimento indicado para quem não quer abrir mão da curvatura dos cabelos.</div>
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloSelagem"> Selagem<br>
+          <div  class="servico2"id="textoSelagem">A selagem capilar tem a função de fechar as cutículas do fio, recuperando a disciplina e o brilho do cabelo.</div>
+          
+      	<input type="radio" name="devweb" value="formatura" id="tituloBotox"> Botox <br>
+          <div class="servico2" id="textoBotox">É um tratamento estético que tira o frizz e reduz o volume dos cabelos com naturalidade.</div>
+        
+      </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="group margin"></div>
+    <div class="section bg">
+      <div class="container">
+        <h1 class="hero2"><strong>CONFIRA NOSSOS EVENTOS</strong></h1>
+        <h3 class="texto">  Ligado ao profissionalismo dos nossos colaboradores, Ana Maria Celia disponibiliza um espaço moderno desenhado inevitavelmente a pensar no conforto de todos os que nos visitam, desde os adultos ao mais pequenos. Num cabeleireiro em que o desenvolvimento tecnológico existe lado a lado com a arte, tudo foi pensado para que se sinta bem, onde possa relaxar, em que o tempo é dedicado exclusivamente a você. Confira nossos eventos!</h3>
+        <div class="menu">
+        <div class="col three bg ">
+          <div><img class="imgholder" src="images/festas.jpg"></div>
+          <h1 id="tituloFesta"class="feature"><strong>FESTAS</strong></h1>
+          <div class="servico" id="textoFesta">Hoje é dia de festa e você quer arrasar na night? Impressionar a todos? Venha se produzir em nosso ambiente, temos uma equipe completa de profissionais da área da moda e beleza a seu dispor, munidos dos melhores produtos resultantes do mercado atual, com um vasto leque de cortes, químicas, penteados e makes para fazer de você a mulher mais bela da noite, pq beleza também é sinónimo de bem-estar e paz interior! Marque um horario e se surpreenda com os resultados!</div>
+          
+        
+        </div>
+
+        <div class="col three bg ">
+          <div><img class="imgholder" src="images/noiva.jpg"></div>
+          <h1 id="tituloNoiva"class="feature"><strong>DIA DA NOIVA</strong></h1>
+          <div class="servico" id="textoNoiva">O Dia da Noiva é um pacote de serviços (Cabelo, Grinalda, Depilação, Limpeza de pele, Maquiagem, Perfume, Manicure e Pedicure.), preparado e executado por profissionais experientes da área de saúde e beleza, que vão deixar você pronta para todos os acontecimentos do seu casamento. Para que você noiva esteja extremamente linda e preparada para o seu casamento, venha se produzir com a gente e arrase no seu Grande Dia!</div>
+          
+        </div>
+
+        <div class="col three bg ">
+          <div><img class="imgholder" src="images/madrinha.jpg"></div>
+          <h1 id="tituloMadrinha"class="feature"><strong>MADRINHA</strong></h1>
+          <div class="servico" id="textoMadrinha">Seja ele no casamento, ou no batismo de criança, a função é a mesma: cuidar e ajudar! Portanto, quando uma pessoa é convidada para ser padrinho ou madrinha de um casal tem que ter em mente que deve ajudá-los e cuidar deles para que mantenham a harmonia e o amor. O padrinho será um guardião dos noivos.A madrinha pode ser um ombro amigo nas horas em que a noiva estiver aflita, dar sugestões sobre vestidos e trajes de casamento, organizar o chá de panela (ou até mesmo o chá de lingerie e despedida de solteira), além de auxiliar em pequenas tarefas no dia do casamento. Venha se produzir com a gente, contamos com experientes e ótimos profissionais!</div>
+          
+        </div>
+        <div class="group margin"></div>
+        <div class="col three bg ">
+          <div><img class="imgholder" src="images/debutantes.jpeg"></div>
+          <h1 id="tituloDebutante"class="feature"><strong>DEBUTANTE</strong></h1>
+          <div class="servico" id="textoDebutante">A Festa de 15 anos, também conhecida como festa de debutante, é um ritual super conhecido pela sociedade, em que as jovens se apresentam aos amigos e familiares em uma grande festa para celebrar essa transição. Traga esta data tão importante e única da sua vida e venha se transfromar em uma princesa da Disney com a gente!</div>
+          
+        </div>
+
+        <div class="col three bg ">
+          <div><img class="imgholder" src="images/formatura.jpg"></div>
+          <h1 id="tituloFormatura"class="feature"><strong>FORMATURA</strong></h1>
+          <div class="servico" id="textoFormatura">Formatura é uma cerimônia festiva de conclusão de um curso de ensino primário, médio ou universitário.é uma cerimônia mais festiva, com baile de gala e festa para comemorar a conquista dos estudantes. Em alguns casos os alunos usam a beca, seguindo as cores de cada curso, e em outras a vestimenta não é exigida. Em um momento tão importante quanto marcante para nossas vidas, devemos estar bellissimas para encerrar com chave de ouro este ciclo, venha se produzir com a gente!</div>
+          
+        </div>
+
+        </div>
+        </div>
+  <div class="group margin"></div>
+    <div class="">
+  <div class="container">
+    <div class="col three bg">
+      <h1 class="dif" id="tituloPromocoes"><strong>PROMOÇÕES SEMANAIS</strong></h1>
+      <ul class="side" id="textoPromocoes" >
+        <li style="list-style-type: disc; list-style-position: inside;"> Faça a escova e ganhe o corte;</li>
+        <li style="list-style-type: disc; list-style-position: inside;"> Faça luzes e ganhe o tratamento capilar;</li>
+        <li style="list-style-type: disc; list-style-position: inside;"> Faça luzes e ganhe a hidratação;</li>
+        </ul>
+    </div>
+    <div class="col three bg">
+      <h1 class="dif" id="tituloDica"><strong>DICAS DE CUIDADOS EM CASA: </strong></h1>
+      <p class="side" id="textoDica">  Para que seu cabelo fique bonito e bem cuidado, é importante utilizar somente produtos destinados ao seu tipo de cabelo. Existem linhas de shampoo e condicionador específicos para cabelos cacheados, lisos, oleosos, secos, quimicamente tratados entre outros. Evite lavar seus cabelos todos os dias. Sempre remova todo o shampoo e condicionador, caso ele não seja específico para uso sem enxágue. Prefira sempre água fria, pois ela ajuda a fechar as cutículas e evitar aquele aspecto de cabelo arrepiado.</p>
+    </div>
+    <div class="col three bg">
+      <h1 class="dif" id="tituloProduto"><strong>ALGUNS PRODUTOS UTILIZADOS NO SALÃO:</strong></h1>
+      <ul class="side" id="textoProduto" >
+      <li style="list-style-type: disc; list-style-position: inside;"> Duetto;</li>
+      <li style="list-style-type: disc; list-style-position: inside;"> Aneethun;</li>
+      <li style="list-style-type: disc; list-style-position: inside;"> NB Cosmeticos;</li>
+      <li style="list-style-type: disc; list-style-position: inside;"> Santine;</li>
+      <li style="list-style-type: disc; list-style-position: inside;"> Dicolori;</li>
+      <li style="list-style-type: disc; list-style-position: inside;"> Ceti Cosmeticos;</li>
+      </ul>
+  </div>
+</div>
+  
+  </div>
+  <div class="group margin"></div>
+  
+  <div class="group"></div>
+  <div class="section">
+    <div class="footer">
+      <div class="container white">
+        <div class="col four center">
+          <img class="down_logo" src="images/Logo.PNG">
+        </div>
+        <div class="col three left">
+          <h1>Redes sociais</h1>
+          <div class="alis"><a href="https://api.whatsapp.com/send?phone=5511986364371" target="_blank"><img class="face" src="images/whatsapp_logo.png"></a>
+              <a href="https://www.instagram.com/mariaceliaalmeidadeolivera/" target="_blank"> <img class="face" src="images/instagram_logo.png"></a>
+              <a href="#"> <img class="face" src="images/facebook_logo.png" target="_blank"></a>
+        </div>
+         <div class="col lug ">
+           <h1>Informações basicas</h1>
+           <p>Endereço: Rua Segundo Tenente Naylor de Correia M. Mendes, 212 - Cidade Jardim Cumbica - Guarulhos/SP - 07181-020.</p>
+           <p>Contato: (11)98636-4371.</p>
+           <p>celia3004@gmail.com</p>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+        <div class="group"></div>
+        </div>
+      </div>
+    </div>
+        
+    </div>
+  </div>
+  </div>
+<script type="text/javascript">
+
+   // apenas uma vez
+   $(document).ready(function() {
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoCorte").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloCorte").mouseover(function(){
+          $("#textoCorte").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloCorte").mouseout(function(){
+          $("#textoCorte").hide();
+      });
+  
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoLuzes").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloLuzes").mouseover(function(){
+          $("#textoLuzes").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloLuzes").mouseout(function(){
+          $("#textoLuzes").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoPenteado").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloPenteado").mouseover(function(){
+          $("#textoPenteado").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloPenteado").mouseout(function(){
+          $("#textoPenteado").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoMaquiagem").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloMaquiagem").mouseover(function(){
+          $("#textoMaquiagem").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloMaquiagem").mouseout(function(){
+          $("#textoMaquiagem").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoTratamento").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloTratamento").mouseover(function(){
+          $("#textoTratamento").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloTratamento").mouseout(function(){
+          $("#textoTratamento").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoHidratacao").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloHidratacao").mouseover(function(){
+          $("#textoHidratacao").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloHidratacao").mouseout(function(){
+          $("#textoHidratacao").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoDetox").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloDetox").mouseover(function(){
+          $("#textoDetox").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloDetox").mouseout(function(){
+          $("#textoDetox").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoReconstrucao").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloReconstrucao").mouseover(function(){
+          $("#textoReconstrucao").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloReconstrucao").mouseout(function(){
+          $("#textoReconstrucao").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoRe").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloRe").mouseover(function(){
+          $("#textoRe").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloRe").mouseout(function(){
+          $("#textoRe").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoNutricao").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloNutricao").mouseover(function(){
+          $("#textoNutricao").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloNutricao").mouseout(function(){
+          $("#textoNutricao").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoBlindagem").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloBlindagem").mouseover(function(){
+          $("#textoBlindagem").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloBlindagem").mouseout(function(){
+          $("#textoBlindagem").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoQuimica").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloQuimica").mouseover(function(){
+          $("#textoQuimica").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloQuimica").mouseout(function(){
+          $("#textoQuimica").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoColoracao").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloColoracao").mouseover(function(){
+          $("#textoColoracao").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloColoracao").mouseout(function(){
+          $("#textoColoracao").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoProgressiva").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloProgressiva").mouseover(function(){
+          $("#textoProgressiva").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloProgressiva").mouseout(function(){
+          $("#textoProgressiva").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoRelaxamento").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloRelaxamento").mouseover(function(){
+          $("#textoRelaxamento").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloRelaxamento").mouseout(function(){
+          $("#textoRelaxamento").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoSelagem").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloSelagem").mouseover(function(){
+          $("#textoSelagem").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloSelagem").mouseout(function(){
+          $("#textoSelagem").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoBotox").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloBotox").mouseover(function(){
+          $("#textoBotox").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloBotox").mouseout(function(){
+          $("#textoBotox").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoFesta").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloFesta").mouseover(function(){
+          $("#textoFesta").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloFesta").mouseout(function(){
+          $("#textoFesta").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoNoiva").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloNoiva").mouseover(function(){
+          $("#textoNoiva").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloNoiva").mouseout(function(){
+          $("#textoNoiva").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoMadrinha").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloMadrinha").mouseover(function(){
+          $("#textoMadrinha").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloMadrinha").mouseout(function(){
+          $("#textoMadrinha").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoDebutante").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloDebutante").mouseover(function(){
+          $("#textoDebutante").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloDebutante").mouseout(function(){
+          $("#textoDebutante").hide();
+      });
+
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoFormatura").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloFormatura").mouseover(function(){
+          $("#textoFormatura").show();
+         
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloFormatura").mouseout(function(){
+          $("#textoFormatura").hide();
+      });
+  
+  
+  
+  
+
+      // oculta o conteudo da div chamanda textoCorte
+      $("#textoProduto").hide();
+
+      // quando o mouse passa por cima , exibir a div textoCorte
+      $("#tituloProduto").mouseover(function(){
+      $("#textoProduto").show();
+   
+      });
+
+      // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+      $("#tituloProduto").mouseout(function(){
+      $("#textoProduto").hide();
+      });
+
+
+       // oculta o conteudo da div chamanda textoCorte
+       $("#textoPromocoes").hide();
+
+       // quando o mouse passa por cima , exibir a div textoCorte
+       $("#tituloPromocoes").mouseover(function(){
+       $("#textoPromocoes").show();
+
+       });
+
+       // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+       $("#tituloPromocoes").mouseout(function(){
+       $("#textoPromocoes").hide();
+       });
+
+
+        // oculta o conteudo da div chamanda textoCorte
+      $("#textoDica").hide();
+
+       // quando o mouse passa por cima , exibir a div textoCorte
+       $("#tituloDica").mouseover(function(){
+       $("#textoDica").show();
+
+       });
+
+       // quando o mouse sai, ocultar o conteuda da div chamanda textoCorte
+       $("#tituloDica").mouseout(function(){
+       $("#textoDica").hide();
+       });
+
+   });
+
+</script>
+
+</form>
+</body>
+</html>

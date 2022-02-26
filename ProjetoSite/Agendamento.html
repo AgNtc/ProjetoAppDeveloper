@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Agendamento</title>
+  <meta http-equiv="Content-Language" content="pt-br">
+  <meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+	<style type="text/css">
+		html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.section .container {
+  padding: 30px 0 50px 0;
+
+}
+
+.section.bg {
+  background: white;
+}
+/*
+  Header
+*/
+
+.hold {
+  height: 80px;
+}
+
+.header {
+  line-height: 80px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #ffa500;
+}
+
+.header.small {
+  line-height: 50px;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+}
+
+.header.small > .container > #logo {
+  height: 40px;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-150%);
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+}
+
+ul.nav li:hover a {
+  color: white;
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+}
+/*
+  Slider
+*/
+ .slider,
+ .footer {
+  background: #696969;
+}
+
+.slidercontent {
+  text-align: center;
+  background-image: url("images/gif_agen.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 10em;
+  padding-right: 6.5em;
+  padding-left: 6.5em;
+}
+
+.hero {
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h1.hero {
+  font-size: 54px;
+}
+
+h2.hero {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+h1.hero:after {
+  content: "";
+  width: 300px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.call {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.call span {
+  display: inline;
+  border: 1px solid white;
+  padding: 8px 13px;
+  font-size: 20px;
+  transition: background 0.15s linear;
+}
+
+.call span:hover {
+  background: #ffa500;
+  cursor: pointer;
+}
+/* 
+  Columns 
+*/
+
+.col {
+  float: left;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  alignment-baseline: central;
+  text-align: center;
+  vertical-align: center;
+  text-align-last: center;
+  background: center;
+  align-content: center;
+}
+
+.col.four {
+  width: 23%;
+  margin: 0 5%;
+}
+
+.col.three {
+  width: 31.3%;
+  margin: 0 1%;
+}
+
+.col.two {
+  width: 40%;
+  margin: 0 2.5%;
+  padding: 0 2.5%;
+}
+
+.col.extrapad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+ .service,
+.col {
+  font-size: 21px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', sans-serif;
+}
+.feature{
+	color: white;
+	font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.col .service:after {
+  content: "";
+  width: 50px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.col .feature {
+  font-size: 19px;
+}
+
+.col h1.side,
+.col .side,
+.col span.side:first-of-type {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: left;
+}
+
+.col .icon {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  text-align: center;
+  margin: 0 auto;
+  transition: background 0.25s linear, color 0.25s linear;
+}
+
+ .icon.side {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: -15px;
+  height: 50px;
+  width: 50px;
+}
+
+
+.col:hover > .icon.side {
+  background: initial;
+  color: initial;
+}
+
+.responsivegroup {
+  display: none;
+}
+/*
+  Column specifics
+*/
+
+.col  p,
+.col h1 {
+  padding: 0 1%;
+  text-align: justify;
+}
+
+.group.margin {
+  margin-bottom: 20px;
+}
+
+.col .imgholder {
+  height: 300px;
+  width: 100%;
+  background: #333;
+  transition: background 0.3s linear;
+}
+
+.col.bg {
+  background: #808080;
+}
+
+.col.pointer {
+  cursor: pointer;
+}
+
+.col.bg:hover {
+  background: #ff953e;
+}
+
+.col span.feature {
+  font-size: 20px;
+}
+/*
+  Text
+*/
+
+.container > h1:not(.hero) {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container > h1:after {
+  content: "";
+  width: 30px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.left,
+.left > h1,
+ {
+  text-align: left;
+}
+
+.reset {
+  text-align: left !important;
+}
+
+.reset:after {
+  display: none !important;
+}
+/* 
+  Slider with Content
+*/
+
+.white h1,
+.white h2,
+.white p,
+.white div,
+.white a {
+  color: #fff;
+}
+/*
+  Responsive
+*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .col.four {
+    width: 48%;
+    margin: 1%;
+  }
+  .col.three {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .header {
+    height: auto;
+    background: #eee;
+  }
+  #logo {
+    position: initial;
+    float: none;
+    display: block;
+    transform: none;
+    margin: 10px auto 0 auto;
+  }
+  ul.nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul.nav li {
+    float: initial;
+    display: inline-block;
+  }
+  .responsivegroup {
+    display: block;
+  }
+  .responsivegroup:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+li{
+	color: white;
+}
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .col, .col.four, .col.three, .col.two {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .col.extrapad {
+    padding: 1%;
+    margin-bottom: 10px;
+  }
+  .group {
+    display: none;
+  }
+}
+.clock{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+
+}
+.map{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.phone{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.dif{
+	color:black;
+	font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', sans-serif;
+    background: #ffa500;
+}
+.down_logo{
+	height: 100px;
+	margin-top: 8px;
+	margin-left: 7px;
+    align-self: center;
+    
+}
+.face{
+	height: 50px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+.ground{
+  background-color: #ffbc40;
+  color: white;
+  align-self: center;
+  margin-right: 1%;
+}
+
+.info{
+  font-size: 1em;
+  width:500px;
+  height: 250px;
+  margin-right: 1%;
+  border-radius: 10px;
+  float: right;
+  transform: translateY(-10%);
+  font-size: 21px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', sans-serif;
+  position: absolute;
+  right: 0;
+  top: 68%;
+
+}
+
+.alis a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.lug{
+  float: right;
+  left: 100%;
+  text-align: center;
+  margin-top: -50%;
+}
+
+.lug h1{
+  text-align: center;
+}
+
+.lug p {
+  text-align: justify;
+}
+
+.campo{
+  margin-bottom: 1em;
+}
+
+.campo{
+  margin-bottom: 0.2em;
+  color: black;
+  display: inline-block;
+}
+
+.grupo .campo{
+  float: left;
+  margin-right: 1em;
+}
+
+.campo input[type="text"], .campo[type="email"], .campo select, .campo textarea{
+  padding: 0.2;
+  border: 1px solid #D3D3D3;
+  display: block;
+}
+
+.campo select option {
+  padding-right: 1em;
+}
+
+.campo input:focus, .campo input:focus, .campo textarea:focus{
+  background: #ffffff;
+}
+
+
+.hero2{
+    font-size: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #ff953e;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.hero3{
+    font-size: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #00000;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.texto{
+  font-size: 22px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #696969 ;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.warrper{
+  max-width: 50rem;
+  width: 100%;
+  margin: 1em auto;
+  display: flex;
+  padding-left: 45%;
+  
+}
+
+.button {
+  font-size: 2em;
+  background: #ffa500;
+  color: #FFF;
+  border: 0.15em solid #ffa500;
+  padding: 0.65rem 0.55rem;
+  position:relative;
+  z-index: 1;
+  overflow: hidden;
+  
+
+}
+.button:hover {
+  color: black;
+}
+.button:after {
+  content: '';
+  position: absolute;
+  background: #FFF; 
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+} 
+.button[class^='grow']:after {
+  transition: all 0.35s ease;
+}
+.button[class^='grow']:hover:after {
+  transition: all 0.35s ease-out;
+}
+
+.button .grow-ellipse:after {
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0,0);
+}
+.button .grow-ellipse:hover:after {
+  transform: scale(1,1);
+}
+
+{
+  box-sizing: border-box;
+}
+
+
+
+form {
+  align-self: center;
+  
+}
+select {
+  background: black;
+  border-color: #00000;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 30%;
+  background-color: white;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+
+fieldset { 
+  margin-bottom: 30px;
+  border: none;
+  align-self: center;
+  align-items: center;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+label {
+  align-items: center;
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline; 
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+  .new{
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  
+
+
+</style>
+
+</head>
+<body>
+	<div class="hold">
+  <div class="header">
+    <div class="container">
+      <div id="logo">
+        <img class="down_logo" src="images/Logo.PNG">
+      </div>
+      <ul class="nav">
+        <li><a href="Index2.html">Home</a></li>
+        <li><a href="Serviços.html">Serviços</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="login.html">Área do profissional</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
+    <div class="container slidercontent">
+      <h1 class="hero">Agendamento</h1>
+      
+      <div class="call"><h2>Agende seu serviço para fazermos a cotação para o seu cabelo.</h2></div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="group"></div>
+  </div>
+</div>
+<div>
+<a href="https://api.whatsapp.com/send?phone=5511986364371" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+</div>
+<div class="section">
+  <div class="container">
+    <h1 class="hero2"><strong>Envie seu agendamento!</strong></h1>
+    <h3 class="texto">Escolha o serviço desejado, caso selecione química ou tratamento capilar abrirá uma as demais escolhas, selecione o horário e data, logo um de nossos funcionários entrará em contato para saber se existe alguma dúvida.</h3>
+  </div>
+</div>
+
+<div class="alert alert-success text-center invisible"></div>
+<form action="gravar.jsp" method="post" name="formulario">
+<fieldset class="section container texto new">
+          
+          <legend><h3><span class="number">1</span> Seus dados:</h3></legend>
+        
+          <label for="nome_form">Nome:</label>
+          <input type="text" name="nome_form" id="nome_form" required="true">
+        
+          <label for="email_form">Email:</label>
+          <input type="email" name="email_form" id="email_form" placeholder="xxx@xxxx.com" required="true">
+          
+          <label for="telefone_form">Telefone:</label>
+          <input type="tel" name="telefone_form" id="telefone_form" placeholder="(xx)9XXXX-XXXX" required="true">
+        
+          
+        </fieldset>
+        <fieldset class="container texto section new">  
+        
+          <legend><h3><span class="number">2</span> Serviços:</h3></legend>
+          
+        <select name="servicos" id="servicos" onchange="validarForm()" required="true" class="form">
+          <option selected disabled value=''>Selecione um serviço</option>
+          <option value='1'>Corte</option>
+          <option value='2'>Luzes</option>
+          <option value='3'>Penteado</option>
+          <option value='4'>Maquiagem</option>
+          <option value='5'>Tratamento capilar</option>
+          <option value='6'>Quimica</option>
+        </select>
+
+        <select id="btn" name="btn" disabled>
+      <option selected disabled value="">Selecione o Tratamento desejado</option>
+      <option value="7">Hidratação</option>
+      <option value="8">Detox Quelanx</option>
+      <option value="9">Cauterização</option>
+      <option value="10">Reconstrução</option>
+      <option value="11">Reconstrução dos fios</option>
+      <option value="12">Nutrição</option>
+      <option value="13">Blindagem dos fios</option>
+    </select>
+
+    <select id="quin" name="quin" disabled>
+      <option selected disabled value="">Selecione o Tratamento quimico desejado</option>
+      <option value="14">Coloração</option>
+      <option value="15">Progressiva</option>
+      <option value="16">Relaxamento</option>
+      <option value="17">Selagem</option>
+      <option value="18">Botox</option>
+    </select>
+         </fieldset>
+    <fieldset class="section container texto new">
+    <div class=" col two">
+      <label for="mark"><legend><h3><span class="number">3</span> Data:</h3></legend></label>
+      <br/>
+      <input type="date" name="mark" id="mark" required="true" max="Sábado" min="Segunda">
+    </div>
+    <div class="col two" align="center">
+      <label for="hora"><legend><h3><span class="number">4</span> Horário:</h3></legend></label>
+      <br/>
+      <input type="time" name="hora" id="hora" required="true" min="11:00" max="21:00">
+    </div>
+  </fieldset>
+
+  <fieldset class="section container texto new">
+  
+      <label for="obs"><legend><h3><span class="number">5</span> Observações: </h3></legend></label>
+      <br/>
+      <textarea rows="6" style="width: 70%; height: 50%;"id="obs" name="obs"></textarea>
+
+  </fieldset>
+
+
+<div class="warrper">
+  <input type="submit" value="Enviar" class="button">
+</div>
+
+</form>
+
+
+
+ 
+
+
+<div class="section">
+  <div class="footer">
+    <div class="container white">
+      <div class="col four center">
+        <img class="down_logo" src="images/Logo.PNG">
+      </div>
+      <div class="col three left">
+        <h1>Redes sociais</h1>
+        <div class="alis"><a href="https://api.whatsapp.com/send?phone=5511986364371" target="_blank"><img class="face" src="images/whatsapp_logo.png"></a>
+            <a href="https://www.instagram.com/mariaceliaalmeidadeolivera/" target="_blank"> <img class="face" src="images/instagram_logo.png"></a>
+            <a href="#"> <img class="face" src="images/facebook_logo.png" target="_blank"></a>
+      </div>
+       <div class="col lug ">
+         <h1>Informações basicas</h1>
+         <p>Endereço: Rua Segundo Tenente Naylor de Correia M. Mendes, 212 - Cidade Jardim Cumbica - Guarulhos/SP - 07181-020.</p>
+         <p>Contato: (11)98636-4371.</p>
+         <p>celia3004@gmail.com</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+      <div class="group"></div>
+
+
+<script type="text/javascript">
+    document.getElementById("servicos").value; 
+    function validarForm() { 
+       var optionSelect = document.getElementById("servicos").value;
+
+       if(optionSelect =="5" ){ 
+           document.getElementById("btn").disabled = false;
+       }else{
+           document.getElementById("btn").disabled = true;
+       }
+        if(optionSelect =="6" ){ 
+           document.getElementById("quin").disabled = false;
+       }else{
+           document.getElementById("quin").disabled = true;
+       }
+}
+
+       alert("uma mensagem escrita pelo servidor");
+
+var obj = new XMLHttpRequest();
+      obj.open('GET', url, true);
+      obj.onreadystatechange = function (){
+        if(obj.readyState == 4 && obj.status ==200){
+          var dados = JSON.parse(obj.responseText) ;
+  </script>
+</body>
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Sobre</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<meta charset="utf-8">
+
+
+</head>
+	<style type="text/css">
+		html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.section .container {
+  padding: 30px 0 50px 0;
+
+}
+
+.section.bg {
+  background: white;
+}
+/*
+  Header
+*/
+
+.hold {
+  height: 80px;
+}
+
+.header {
+  line-height: 80px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #ffa500;
+}
+
+.header.small {
+  line-height: 50px;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+}
+
+.header.small > .container > #logo {
+  height: 40px;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-150%);
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+}
+
+ul.nav li:hover a {
+  color: white;
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+}
+/*
+  Slider
+*/
+ .slider,
+ .footer {
+  background: #696969;
+}
+
+.slidercontent {
+  text-align: center;
+  background-image: url("images/gif_sobre.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 15em;
+  padding-right: 6.5em;
+  padding-left: 6.5em;
+}
+
+.hero {
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h1.hero {
+  font-size: 54px;
+}
+
+h2.hero {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+h1.hero:after {
+  content: "";
+  width: 300px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.call {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.call span {
+  display: inline;
+  border: 1px solid white;
+  padding: 8px 13px;
+  font-size: 20px;
+  transition: background 0.15s linear;
+}
+
+.call span:hover {
+  background: #ffa500;
+  cursor: pointer;
+}
+/* 
+  Columns 
+*/
+
+.col {
+  float: left;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  alignment-baseline: central;
+  text-align: center;
+  vertical-align: center;
+  text-align-last: center;
+  background: center;
+  align-content: center;
+}
+
+.col.four {
+  width: 23%;
+  margin: 0 5%;
+}
+
+.col.three {
+  width: 31.3%;
+  margin: 0 1%;
+}
+
+.col.two {
+  width: 40%;
+  margin: 0 2.5%;
+  padding: 0 2.5%;
+}
+
+.col.extrapad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+ .service,
+.col {
+  font-size: 21px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', sans-serif;
+}
+.feature{
+	color: white;
+	font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.col .service:after {
+  content: "";
+  width: 50px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.col .feature {
+  font-size: 19px;
+}
+
+.col h1.side,
+.col .side,
+.col span.side:first-of-type {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.col .icon {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  text-align: center;
+  margin: 0 auto;
+  transition: background 0.25s linear, color 0.25s linear;
+}
+
+ .icon.side {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: -15px;
+  height: 50px;
+  width: 50px;
+}
+
+
+.col:hover > .icon.side {
+  background: initial;
+  color: initial;
+}
+
+.responsivegroup {
+  display: none;
+}
+/*
+  Column specifics
+*/
+
+.col  p,
+.col h1 {
+  padding: 0 1%;
+  text-align: justify;
+}
+
+.group.margin {
+  margin-bottom: 20px;
+}
+
+.col .imgholder {
+  height: 300px;
+  width: 100%;
+  background: #333;
+  transition: background 0.3s linear;
+}
+
+.col.bg {
+  background: #808080;
+}
+
+.col.pointer {
+  cursor: pointer;
+}
+
+.col.bg:hover {
+  background: #ff953e;
+}
+
+.col span.feature {
+  font-size: 20px;
+}
+/*
+  Text
+*/
+
+.container > h1:not(.hero) {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container > h1:after {
+  content: "";
+  width: 30px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.left,
+.left > h1,
+ {
+  text-align: left;
+}
+
+.reset {
+  text-align: left !important;
+}
+
+.reset:after {
+  display: none !important;
+}
+/* 
+  Slider with Content
+*/
+
+.white h1,
+.white h2,
+.white p,
+.white div,
+.white a {
+  color: #fff;
+}
+/*
+  Responsive
+*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .col.four {
+    width: 48%;
+    margin: 1%;
+  }
+  .col.three {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .header {
+    height: auto;
+    background: #eee;
+  }
+  #logo {
+    position: initial;
+    float: none;
+    display: block;
+    transform: none;
+    margin: 10px auto 0 auto;
+  }
+  ul.nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul.nav li {
+    float: initial;
+    display: inline-block;
+  }
+  .responsivegroup {
+    display: block;
+  }
+  .responsivegroup:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+li{
+	color: white;
+}
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .col, .col.four, .col.three, .col.two {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .col.extrapad {
+    padding: 1%;
+    margin-bottom: 10px;
+  }
+  .group {
+    display: none;
+  }
+}
+.clock{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+
+}
+.map{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.phone{
+	height: 100px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.dif{
+	color:black;
+	font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', sans-serif;
+    background: #ffa500;
+}
+.down_logo{
+	height: 100px;
+	margin-top: 8px;
+	margin-left: 7px;
+    align-self: center;
+    
+}
+.face{
+	height: 50px;
+	margin-top: -8px;
+	margin-left: -7px;
+}
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+.ground{
+  background-color: #ffbc40;
+  color: white;
+  align-self: center;
+  margin-right: 1%;
+}
+
+.info{
+  font-size: 1em;
+  width:500px;
+  height: 250px;
+  margin-right: 1%;
+  border-radius: 10px;
+  float: right;
+  transform: translateY(-10%);
+  font-size: 21px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', sans-serif;
+  position: absolute;
+  right: 0;
+  top: 68%;
+
+}
+
+.bg-gradient{
+  background: linear-gradient(50deg, $rosa, $lilaz);
+  color: #fff;
+}
+.slider{
+  margin: 10px auto;
+  width:500px;
+}
+
+.box{
+  background-color: #ccc;
+  padding:20px;
+  border:1px solid #111;
+  color: initial;
+}
+.slider-principal{
+  width: 50%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 0%;
+}
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  width: 50px;
+  height: 65px;
+  top: 33.5%;
+  background-color: transparent;
+  background-image: url('./images/left-arrow.png');
+  position: absolute;
+  z-index: 9;
+  left: 0;
+}
+button.slick-next {
+  font-size: 0px;
+  border: none;
+  width: 50px;
+  height: 65px;
+  top: 33.5%;
+  background-color: transparent;
+  background-image: url('./images/right-arrow.png');
+  position: absolute;
+  z-index: 8.5;
+  right: 15px;
+}
+.slick-initialized{
+  overflow: hidden;
+}
+.slick-dots li button{
+  font-size: 0px;
+  border: 5px solid #ffffff;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots{
+  margin:0 auto;
+  width: 50%;
+  position: absolute;
+  left:30%;
+  top: 590px;
+}
+
+li.slick-active button{
+  background: #ff953e;
+}
+
+.slick-dots li{
+  padding-left: 10px;
+  display: inline-block;
+}
+.alis a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.lug{
+  float: right;
+  left: 100%;
+  text-align: center;
+  margin-top: -50%;
+}
+
+.lug h1{
+  text-align: center;
+}
+
+.lug p {
+  text-align: center;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+	<div class="hold">
+  <div class="header">
+    <div class="container">
+      <div id="logo">
+        <img class="down_logo" src="images/Logo.PNG">
+      </div>
+      <ul class="nav">
+        <li><a href="Index2.html">Home</a></li>
+        <li><a href="Agendamento.html">Agendamento</a></li>
+        <li><a href="Serviços.html">Serviços</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+        <li><a href="login.html">Área do profissional</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
+    <div class="container slidercontent">
+      <h1 class="hero">Sobre</h1>
+      
+      <div class="call"><h2>Um pouco sobre a nossa história, nossos valores e objetivos.</h2></div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="group"></div>
+  </div>
+</div>
+<div>
+<a href="https://api.whatsapp.com/send?phone=5511986364371" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+</div>
+
+<div>
+    <div class="slider-principal">
+      <img src="images/slider1.PNG">
+      <img src="images/slider2.PNG">
+      <img src="images/slider3.PNG">
+      <img src="images/slider4.png">
+      <img src="images/slider5.png">
+    </div>
+</div>
+
+<main class="info">
+<div class="col ground info">
+     <span class="feature side" >Sobre o salão</span>
+      <p class="side" >Esse projeto começou em 2007, com um sonho de deixar as mulheres mais independentes e mais lindas. Durante estes 15 anos muitas mulheres tem sido transformadas. O começo da caminhada foi dificil, porém a cada dia aprendi o quão importante a auto estima é para cada pessoa.</p>
+    </div>
+  </main>
+  <div class="section">
+  <div class="container">
+    <div class="col three">
+      <h1 class="icon"><img class="clock" src="images/focus.png"></h1>
+      <h1 class="service">Missão</h1>
+      <p>Temos os proposito de mecher e melhorar a autioestima de varias mulheres trasendo transofrmações para elas se amarem a cada dia, e assim levarem suas belezas unicas nos ambiente que circularem.</p>
+    </div>
+    <div class="col three">
+      <h1 class="icon"><img class="map" src="images/eye-scan.png"></h1>
+      <h1 class="service">Visão</h1>
+      <p>Ligado ao profissionalismo dos nossos colaboradores, Maria Celia disponibiliza um espaço aconchegante para os visitantes em seu lar pensando no conforto de todos os que nos visitam, desde o adulto ao mais pequeno. Num cabeleireiro em que o desenvolvimento tecnológico existe lado a lado com a arte, tudo foi pensado para que se sinta bem, onde possa relaxar, em que o tempo é dedicado exclusivamente a si.</p>
+    </div>
+    <div class="responsivegroup"></div>
+    <div class="col three">
+      <h1 class="icon"><img class="phone" src="images/responsibility.png"></h1>
+      <h1 class="service">Valores</h1>
+      <p>Nunca deixar ninguem para trás , sendo grata a cada um destes anos pelo espaço. Assim respeitando e sempre buscando o melhores objetivos.</p>
+    </div>
+    <div class="group"></div>
+  </div>
+</div>    
+</div>
+</main>
+</div>
+   
+ 
+
+
+<div class="section">
+  <div class="footer">
+    <div class="container white">
+      <div class="col four center">
+        <img class="down_logo" src="images/Logo.PNG">
+      </div>
+      <div class="col three left">
+        <h1>Redes sociais</h1>
+        <div class="alis"><a href="https://api.whatsapp.com/send?phone=5511986364371" target="_blank"><img class="face" src="images/whatsapp_logo.png"></a>
+            <a href="https://www.instagram.com/mariaceliaalmeidadeolivera/" target="_blank"> <img class="face" src="images/instagram_logo.png"></a>
+            <a href="#"> <img class="face" src="images/facebook_logo.png" target="_blank"></a>
+      </div>
+       <div class="col lug ">
+         <h1>Informações basicas</h1>
+         <p>Endereço: Rua Segundo Tenente Naylor de Correia M. Mendes, 212 - Cidade Jardim Cumbica - Guarulhos/SP - 07181-020.</p>
+         <p>Contato: (11)98636-4371.</p>
+         <p>celia3004@gmail.com</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+      <div class="group"></div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $('.slider-principal').slick({
+       dots: true,
+       infinite: false,
+       slidesToShow: 1,
+       speed: 250,
+       fade: true,
+       autoplay: true
+});
+  </script>
+</body>
+</html>
